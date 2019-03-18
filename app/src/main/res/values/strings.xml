@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Monese</string>
+
+    <!--Rocket List Fragment-->
+    <string name="fragment_rocket_list">Rockets</string>
+
+    <!--Launch Detail-->
+    <string name="fragment_launch_detail">Launch Detail</string>
+    <string name="fragment_launch_detail_no_launches">There\'s no launches yet!</string>
+
+    <!--Bottom Sheet-->
+    <string name="bottom_sheet_text_filter">Filters</string>
+    <string name="bottom_sheet_chip_active">Active</string>
+
+    <!--Welcome Dialog-->
+    <string name="welcome_dialog_title">Welcome!</string>
+    <string name="welcome_dialog_message">Hope you enjoy using this application!</string>
+    <string name="welcome_dialog_action">OK</string>
+
+
+</resources>

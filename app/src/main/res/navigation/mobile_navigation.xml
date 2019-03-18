@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mobile_navigation"
+            app:startDestination="@id/rocketListFragment">
+
+    <fragment
+            android:id="@+id/rocketListFragment"
+            android:name="com.test.monese.ui.rocketlist.RocketListFragment"
+            android:label="@string/fragment_rocket_list"
+            tools:layout="@layout/fragment_rocket_list">
+        <action
+                android:id="@+id/action_rocketListFragment_to_launchDetailFragment"
+                app:destination="@id/launchDetailFragment"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/launchDetailFragment"
+            android:name="com.test.monese.ui.launchdetail.LaunchDetailFragment"
+            android:label="@string/fragment_launch_detail"
+            tools:layout="@layout/fragment_launch_detail">
+        <argument
+                android:name="rocketId"
+                app:argType="string"
+                android:defaultValue='""'/>
+    </fragment>
+
+
+</navigation>

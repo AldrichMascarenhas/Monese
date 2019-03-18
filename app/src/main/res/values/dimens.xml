@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Text Sizes -->
+    <dimen name="h1_text_size">30sp</dimen>
+    <dimen name="h2_text_size">24sp</dimen>
+    <dimen name="h3_text_size">18sp</dimen>
+    <dimen name="h4_text_size">14sp</dimen>
+    <dimen name="h5_text_size">12sp</dimen>
+
+    <!--Default Margins-->
+    <dimen name="x_small_margin">4dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="medium_margin">16dp</dimen>
+    <dimen name="large_margin">24dp</dimen>
+    <dimen name="x_large_margin">32dp</dimen>
+
+    <!--Default Paddings-->
+    <dimen name="x_small_padding">4dp</dimen>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="medium_padding">16dp</dimen>
+    <dimen name="large_padding">24dp</dimen>
+
+    <!--item_launch_layout-->
+    <dimen name="item_launch_layout_card_height">200dp</dimen>
+    <dimen name="item_launch_layout_margin_top">50dp</dimen>
+    <dimen name="item_launch_layout_margin_start">30dp</dimen>
+
+    <!--item_rocket_layout-->
+    <dimen name="item_rocket_layout_card_height">200dp</dimen>
+    <dimen name="item_rocket_layout_margin_top">50dp</dimen>
+    <dimen name="item_rocket_layout_margin_start">30dp</dimen>
+
+    <!--Progress bar size-->
+    <dimen name="progress_bar_size">64dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/small_margin"
+        android:layout_height="@dimen/item_rocket_layout_card_height"
+        android:id="@+id/itemRocketLayoutCardView">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:src="@tools:sample/backgrounds/scenic"
+                android:id="@+id/itemRocketLayoutImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <View
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@drawable/item_rocket_layout_background"
+                android:id="@+id/itemRocketLayoutViewBackground"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toStartOf="@+id/itemRocketLayoutGuideline50V"/>
+
+        <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/item_rocket_layout_margin_top"
+                android:layout_marginStart="@dimen/item_rocket_layout_margin_start"
+                style="@style/h3.bold"
+                android:layout_marginEnd="@dimen/medium_margin"
+                android:textColor="@android:color/white"
+                tools:text="Falcon 9"
+                app:layout_constraintEnd_toStartOf="@id/itemRocketLayoutGuideline50V"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemRocketLayoutTextViewName"/>
+
+        <TextView
+                android:layout_marginTop="@dimen/x_small_margin"
+                android:layout_marginEnd="@dimen/medium_margin"
+                style="@style/h3.light"
+                android:textColor="@android:color/white"
+                tools:text="United States of America"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@id/itemRocketLayoutGuideline50V"
+                app:layout_constraintStart_toStartOf="@id/itemRocketLayoutTextViewName"
+                app:layout_constraintTop_toBottomOf="@id/itemRocketLayoutTextViewName"
+                android:id="@+id/itemRocketLayoutTextViewCountry"/>
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/x_small_margin"
+                   android:id="@+id/itemRocketLayoutImageViewEngine"
+                   android:src="@drawable/ic_engine"
+                   app:layout_constraintTop_toBottomOf="@id/itemRocketLayoutTextViewCountry"
+                   app:layout_constraintStart_toStartOf="@id/itemRocketLayoutTextViewName"
+                   android:tint="@android:color/white"/>
+        <TextView
+                style="@style/h3.bold"
+                android:layout_marginStart="@dimen/small_margin"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toEndOf="@id/itemRocketLayoutImageViewEngine"
+                app:layout_constraintTop_toTopOf="@id/itemRocketLayoutImageViewEngine"
+                app:layout_constraintBottom_toBottomOf="@id/itemRocketLayoutImageViewEngine"
+                tools:text="9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemRocketLayoutTextViewEngineCount"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/itemRocketLayoutGuideline50V"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintGuide_percent="0.50"
+                android:orientation="vertical"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,51 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android'
+android {
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion globalConfiguration["androidCompileSdkVersion"]
+
+
+    defaultConfig {
+        minSdkVersion globalConfiguration["androidMinSdkVersion"]
+        targetSdkVersion globalConfiguration["androidTargetSdkVersion"]
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    def presentationDependencies = rootProject.ext.presentationDependencies
+    def presentationTestDependencies = rootProject.ext.presentationTestDependencies
+
+    implementation presentationDependencies.kotlin
+    implementation presentationDependencies.koin
+    implementation presentationDependencies.koinViewModel
+
+    implementation presentationDependencies.lifecycleLiveData
+    implementation presentationDependencies.lifecycleViewModel
+
+    implementation presentationDependencies.rxAndroid
+    implementation presentationDependencies.rxKotlin
+
+    testImplementation presentationTestDependencies.koinTest
+    testImplementation presentationTestDependencies.junit
+    testImplementation presentationTestDependencies.androidCoreTesting
+
+    testImplementation presentationTestDependencies.runner
+    testImplementation presentationTestDependencies.espressoCore
+    testImplementation presentationTestDependencies.mockitoCore
+
+}

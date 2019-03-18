@@ -1,0 +1,56 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android'
+
+android {
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion globalConfiguration["androidCompileSdkVersion"]
+
+    defaultConfig {
+        minSdkVersion globalConfiguration["androidMinSdkVersion"]
+        targetSdkVersion globalConfiguration["androidTargetSdkVersion"]
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    def dataDependencies = rootProject.ext.dataDependencies
+    def dataTestDependencies = rootProject.ext.dataTestDependencies
+
+    implementation project(':presentation')
+
+    implementation dataDependencies.kotlin
+    implementation dataDependencies.retrofit
+    implementation dataDependencies.retrofitConverterGson
+    implementation dataDependencies.retrofitAdapterRxJava
+    implementation dataDependencies.okHttp
+    implementation dataDependencies.okHttpLoggingInterceptor
+    implementation dataDependencies.roomRuntime
+    implementation dataDependencies.roomRxJava
+    kapt dataDependencies.roomCompiler
+    implementation dataDependencies.koin
+    implementation dataDependencies.lifecycleLiveData
+    implementation dataDependencies.rxKotlin
+
+
+    testImplementation dataTestDependencies.androidCoreTesting
+
+    testImplementation dataTestDependencies.runner
+    testImplementation dataTestDependencies.espressoCore
+    testImplementation dataTestDependencies.mockitoCore
+    testImplementation dataTestDependencies.koinTest
+    testImplementation dataTestDependencies.junit
+}

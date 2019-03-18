@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#448AFF</color>
+
+    <color name="offWhite90Alpha">#E6F7F4F1</color>
+
+    <color name="bottom_sheet_chip_background_color">#ef8888</color>
+    <color name="bottom_sheet_chip_icon_color">#f93900</color>
+
+</resources>

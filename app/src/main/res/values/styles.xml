@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="CardViewStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">0dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="contentPaddingBottom">24dp</item>
+        <item name="contentPaddingTop">24dp</item>
+        <item name="contentPaddingLeft">16dp</item>
+        <item name="contentPaddingRight">16dp</item>
+        <item name="cardBackgroundColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="h1">
+        <item name="android:textSize">@dimen/h1_text_size</item>
+    </style>
+
+    <style name="h1.bold">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+    <style name="h1.light">
+        <item name="android:fontFamily">@font/roboto_light</item>
+    </style>
+    <style name="h1.regular">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="h2">
+        <item name="android:textSize">@dimen/h2_text_size</item>
+    </style>
+
+    <style name="h2.bold">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+    <style name="h2.light">
+        <item name="android:fontFamily">@font/roboto_light</item>
+    </style>
+    <style name="h2.regular">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="h3">
+        <item name="android:textSize">@dimen/h3_text_size</item>
+    </style>
+
+    <style name="h3.bold">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+    <style name="h3.light">
+        <item name="android:fontFamily">@font/roboto_light</item>
+    </style>
+    <style name="h3.regular">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+
+    <style name="h4">
+        <item name="android:textSize">@dimen/h4_text_size</item>
+    </style>
+
+    <style name="h4.bold">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+    <style name="h4.light">
+        <item name="android:fontFamily">@font/roboto_light</item>
+    </style>
+    <style name="h4.regular">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+</resources>
